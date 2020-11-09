@@ -1,0 +1,157 @@
+{
+  "id": "06b9dabd-5058-4582-af1c-7da734656dcf",
+  "version": "2.0",
+  "name": "first-test",
+  "url": "https://rozetka.com.ua",
+  "tests": [{
+    "id": "71fa6254-ec58-437c-bcef-3ea55ac9d0aa",
+    "name": "first-task",
+    "commands": [{
+      "id": "68f7d7eb-39db-4005-83ae-8973c516077e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8d42e15-ea9f-4d76-8238-50a7455fede5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "755x685",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0bfe53bd-aa03-48ef-98bb-693b2ae24ac3",
+      "comment": "",
+      "command": "click",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f0eb438-3a43-4020-b870-ed5ad75d0f25",
+      "comment": "",
+      "command": "click",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fa2f494-4f03-4946-b09c-26ca563d3c5d",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "lenovo ideapad s540"
+    }, {
+      "id": "4adec4c8-2281-4123-9c4f-7cb95f2bf9ce",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "d2cd0c02-0588-462f-afa2-52ff6b1066ac",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,312)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d61d51a-fa19-4d1b-a8dd-7463fb92ef6b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,944)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1aa3a14-135d-45c5-be88-1d1b3d00e798",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button_with_icon > .buy-button__label",
+      "targets": [
+        ["css=.button_with_icon > .buy-button__label", "css:finder"],
+        ["xpath=//app-buy-button/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Купить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7a42be3-ddfa-4d56-8200-4bff0788a04a",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1033.3333740234375)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6296f669-e79e-4bae-8420-4754387e7fe8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal__close",
+      "targets": [
+        ["css=.modal__close", "css:finder"],
+        ["xpath=(//button[@type='button'])[39]", "xpath:attributes"],
+        ["xpath=//single-modal-window/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1aab5803-571d-4ec9-aa1b-1d7d274eac45",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header-actions__button-counter",
+      "targets": [
+        ["css=.header-actions__button-counter", "css:finder"],
+        ["xpath=//div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "59d2e548-c81a-4626-a8ac-2dba0169ecac",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1033.3333740234375)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67d0c4b7-feac-449b-b76e-3e948e8153b2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Оформить заказ",
+      "targets": [
+        ["linkText=Оформить заказ", "linkText"],
+        ["css=.cart-receipt__submit", "css:finder"],
+        ["xpath=//a[contains(text(),'Оформить заказ')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/checkout')])[2]", "xpath:href"],
+        ["xpath=//rz-shopping-cart/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "58e85d7a-39b1-459c-97a2-a916bef580b4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://rozetka.com.ua/"],
+  "plugins": []
+}
