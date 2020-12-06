@@ -7,21 +7,21 @@
     "id": "71fa6254-ec58-437c-bcef-3ea55ac9d0aa",
     "name": "first-task",
     "commands": [{
-      "id": "68f7d7eb-39db-4005-83ae-8973c516077e",
+      "id": "7863e5d1-df6c-429d-b491-701f00f703d4",
       "comment": "",
       "command": "open",
       "target": "/",
       "targets": [],
       "value": ""
     }, {
-      "id": "a8d42e15-ea9f-4d76-8238-50a7455fede5",
+      "id": "8ddac75d-4c89-4a07-8306-4878d7657f81",
       "comment": "",
       "command": "setWindowSize",
-      "target": "755x685",
+      "target": "1552x840",
       "targets": [],
       "value": ""
     }, {
-      "id": "0bfe53bd-aa03-48ef-98bb-693b2ae24ac3",
+      "id": "73945591-22b0-40fd-8cc4-11f41a5127d7",
       "comment": "",
       "command": "click",
       "target": "name=search",
@@ -33,19 +33,18 @@
       ],
       "value": ""
     }, {
-      "id": "0f0eb438-3a43-4020-b870-ed5ad75d0f25",
+      "id": "1a79ea01-5e29-4693-bbf9-cc624910d3f8",
       "comment": "",
-      "command": "click",
-      "target": "name=search",
+      "command": "mouseOver",
+      "target": "css=.top-information__picture",
       "targets": [
-        ["name=search", "name"],
-        ["css=.search-form__input", "css:finder"],
-        ["xpath=//input[@name='search']", "xpath:attributes"],
-        ["xpath=//input", "xpath:position"]
+        ["css=.top-information__picture", "css:finder"],
+        ["xpath=//img[contains(@src,'https://i2.rozetka.ua/owoxads/9/9571.jpg')]", "xpath:img"],
+        ["xpath=//img", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "9fa2f494-4f03-4946-b09c-26ca563d3c5d",
+      "id": "80d229c3-6e5a-4968-b1c1-4944fcb43b70",
       "comment": "",
       "command": "type",
       "target": "name=search",
@@ -55,9 +54,9 @@
         ["xpath=//input[@name='search']", "xpath:attributes"],
         ["xpath=//input", "xpath:position"]
       ],
-      "value": "lenovo ideapad s540"
+      "value": "playstation 4 dualshock 4 v2 steel"
     }, {
-      "id": "4adec4c8-2281-4123-9c4f-7cb95f2bf9ce",
+      "id": "c662cee9-7c16-4300-abf8-764dbd334574",
       "comment": "",
       "command": "sendKeys",
       "target": "name=search",
@@ -69,79 +68,126 @@
       ],
       "value": "${KEY_ENTER}"
     }, {
-      "id": "d2cd0c02-0588-462f-afa2-52ff6b1066ac",
-      "comment": "",
-      "command": "runScript",
-      "target": "window.scrollTo(0,312)",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "1d61d51a-fa19-4d1b-a8dd-7463fb92ef6b",
-      "comment": "",
-      "command": "runScript",
-      "target": "window.scrollTo(0,944)",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "b1aa3a14-135d-45c5-be88-1d1b3d00e798",
+      "id": "8f9757d6-0998-4f76-82c2-292f5220b26f",
       "comment": "",
       "command": "click",
-      "target": "css=.button_with_icon > .buy-button__label",
+      "target": "css=.product__heading",
       "targets": [
-        ["css=.button_with_icon > .buy-button__label", "css:finder"],
-        ["xpath=//app-buy-button/button/span", "xpath:position"],
-        ["xpath=//span[contains(.,'Купить')]", "xpath:innerText"]
+        ["css=.product__heading", "css:finder"],
+        ["xpath=//rz-product-top/div/div", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "e7a42be3-ddfa-4d56-8200-4bff0788a04a",
+      "id": "6a9c8f18-7609-4512-a981-c2d0948a6228",
       "comment": "",
-      "command": "runScript",
-      "target": "window.scrollTo(0,1033.3333740234375)",
-      "targets": [],
+      "command": "verifyText",
+      "target": "css=.product__title",
+      "targets": [
+        ["css=.product__title", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Беспроводной геймпад PlayStation Dualshock 4 v2 Steel Black')]", "xpath:innerText"]
+      ],
+      "value": "Беспроводной геймпад PlayStation Dualshock 4 v2 Steel Black"
+    }, {
+      "id": "2dfea41b-ebdf-4101-b457-258ecb1eb246",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product__heading",
+      "targets": [
+        ["css=.product__heading", "css:finder"],
+        ["xpath=//rz-product-top/div/div", "xpath:position"]
+      ],
       "value": ""
     }, {
-      "id": "6296f669-e79e-4bae-8420-4754387e7fe8",
+      "id": "f1fd479d-e163-4bfd-ac56-fcd08da46639",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button_size_large",
+      "targets": [
+        ["css=.button_size_large", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//app-buy-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Купить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "75c167d4-d8cd-4dcc-b5fd-3cbd82997e85",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.button_size_large",
+      "targets": [
+        ["css=.button_size_large", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//app-buy-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Купить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f618c1ba-d5e0-4a4e-91eb-d4a0dfe6c961",
       "comment": "",
       "command": "click",
       "target": "css=.modal__close",
       "targets": [
         ["css=.modal__close", "css:finder"],
-        ["xpath=(//button[@type='button'])[39]", "xpath:attributes"],
+        ["xpath=(//button[@type='button'])[47]", "xpath:attributes"],
         ["xpath=//single-modal-window/div[2]/div/button", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "1aab5803-571d-4ec9-aa1b-1d7d274eac45",
+      "id": "8187cff9-a74d-438b-9732-e8b27bc98bd9",
       "comment": "",
       "command": "click",
-      "target": "css=.header-actions__button-counter",
+      "target": "css=.header-actions__button_type_basket use",
       "targets": [
-        ["css=.header-actions__button-counter", "css:finder"],
-        ["xpath=//div/a/span", "xpath:position"],
-        ["xpath=//span[contains(.,'1')]", "xpath:innerText"]
+        ["css=.header-actions__button_type_basket use", "css:finder"]
       ],
       "value": ""
     }, {
-      "id": "59d2e548-c81a-4626-a8ac-2dba0169ecac",
-      "comment": "",
-      "command": "runScript",
-      "target": "window.scrollTo(0,1033.3333740234375)",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "67d0c4b7-feac-449b-b76e-3e948e8153b2",
+      "id": "381bf61c-84ad-4525-ae94-e37072c4f709",
       "comment": "",
       "command": "click",
-      "target": "linkText=Оформить заказ",
+      "target": "css=.cart-product__main",
       "targets": [
-        ["linkText=Оформить заказ", "linkText"],
-        ["css=.cart-receipt__submit", "css:finder"],
-        ["xpath=//a[contains(text(),'Оформить заказ')]", "xpath:link"],
-        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/checkout')])[2]", "xpath:href"],
-        ["xpath=//rz-shopping-cart/div/div/div/a", "xpath:position"]
+        ["css=.cart-product__main", "css:finder"],
+        ["xpath=//rz-cart-product/div/div/div[2]", "xpath:position"]
       ],
       "value": ""
+    }, {
+      "id": "38f0a4a4-1149-4c5b-bb35-43fb9ed28bb3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Беспроводной геймпад PlayStation Dualshock 4 v2 Steel Black",
+      "targets": [
+        ["linkText=Беспроводной геймпад PlayStation Dualshock 4 v2 Steel Black", "linkText"],
+        ["css=.cart-product__title", "css:finder"],
+        ["xpath=(//a[contains(text(),'Беспроводной геймпад PlayStation Dualshock 4 v2 Steel Black')])[5]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/sony_ds_4_bl_ps4_steel_black/p41929976/')])[23]", "xpath:href"],
+        ["xpath=//rz-cart-product/div/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c91fea37-b4d5-431b-9d1b-4dec09efde94",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-product__main",
+      "targets": [
+        ["css=.cart-product__main", "css:finder"],
+        ["xpath=//rz-cart-product/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "654f90e7-a48e-436b-8f29-6dac6e29b6d6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Беспроводной геймпад PlayStation Dualshock 4 v2 Steel Black",
+      "targets": [
+        ["linkText=Беспроводной геймпад PlayStation Dualshock 4 v2 Steel Black", "linkText"],
+        ["css=.cart-product__title", "css:finder"],
+        ["xpath=(//a[contains(text(),'Беспроводной геймпад PlayStation Dualshock 4 v2 Steel Black')])[5]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/sony_ds_4_bl_ps4_steel_black/p41929976/')])[23]", "xpath:href"],
+        ["xpath=//rz-cart-product/div/div/div[2]/a", "xpath:position"]
+      ],
+      "value": "Беспроводной геймпад PlayStation Dualshock 4 v2 Steel Black"
     }]
   }],
   "suites": [{
